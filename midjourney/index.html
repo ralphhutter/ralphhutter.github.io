@@ -165,6 +165,11 @@
   ol.steps>li{counter-increment:s;padding-left:44px;position:relative}
   ol.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:var(--r-box);background:var(--hwz-blue);color:var(--hwz-white);font-weight:600;font-size:15px;display:flex;align-items:center;justify-content:center;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .todo{font-family:var(--mono);font-size:.9em;background:var(--hwz-blue-pale);padding:2px 6px;border-radius:var(--r-chip)}
+  figure{margin:6px 0 0}
+  figure img{display:block;width:100%;height:auto;border:1px solid var(--hwz-blue-pale);border-radius:var(--r-img)}
+  figcaption{font-size:14px;color:var(--hwz-muted);margin-top:8px}
+  .figs{display:grid;gap:20px;grid-template-columns:repeat(2,1fr)}
+  @media (max-width:820px){.figs{grid-template-columns:1fr}}
 </style>
 <header class="masthead">
   <div class="masthead-inner">
@@ -200,6 +205,7 @@
       <li>Auf <a href="https://discord.com/register">discord.com/register</a> ein Konto eröffnen.</li>
       <li>Die E-Mail-Adresse über die Mail von Discord bestätigen. Bei Bedarf im Spamordner nachschauen.</li>
     </ol>
+    <figure><img src="img/01-discord-konto-erstellen.jpg" alt="Discord-Formular zum Erstellen eines Kontos" loading="lazy"><figcaption>Discord: Formular zum Erstellen eines Kontos</figcaption></figure>
     <p class="small">Wer bereits einen Discord-Account hat, kann ihn verwenden und diesen Schritt überspringen.</p>
   </section>
 
@@ -212,6 +218,8 @@
       <li>Den <strong>Basic Plan</strong> mit monatlicher Zahlung wählen. Das Jahresabo (USD 96) lohnt sich für die Masterclass nicht.</li>
       <li>Das Abo erst kurz vor dem Seminartag abschliessen und danach kündigen, falls es nicht weiter genutzt wird.</li>
     </ol>
+    <div class="figs"><figure><img src="img/02-midjourney-startseite.jpg" alt="Startseite von Midjourney mit den Schaltflächen Sign up, Log in und Explore" loading="lazy"><figcaption>Midjourney: Startseite, Schaltfläche «Log in» oder «Sign up»</figcaption></figure><figure><img src="img/03-midjourney-anmelden.jpg" alt="Anmeldedialog von Midjourney mit Google und Discord" loading="lazy"><figcaption>Midjourney: Anmeldung mit Google oder Discord</figcaption></figure></div>
+    <figure><img src="img/04-midjourney-abo-waehlen.jpg" alt="Midjourney-Abos Basic, Standard, Pro und Mega mit monatlicher Zahlung" loading="lazy"><figcaption>Midjourney: Abo wählen, Basic Plan mit monatlicher Zahlung (Monthly)</figcaption></figure>
     <div class="note">
       <div class="k">Aktuelle Preise</div>
       <p>Die Preise stehen in der Midjourney-Dokumentation unter <a href="https://docs.midjourney.com/docs/plans">Comparing Midjourney Plans</a>.</p>
@@ -226,6 +234,7 @@
       <li>Den Einladungslink öffnen: <a href="https://discord.gg/jhkGshB78X">discord.gg/jhkGshB78X</a></li>
       <li>Den Beitritt bestätigen.</li>
     </ol>
+    <figure><img src="img/05-discord-einladung.jpg" alt="Einladung zum Discord-Server HWZ Midjourney Masterclass 2027 mit Schaltfläche Accept Invite" loading="lazy"><figcaption>Discord: Einladung zum Server, Schaltfläche «Accept Invite»</figcaption></figure>
     <h3>Eigenen Textkanal erstellen</h3>
     <p>Damit die Bilder später in einem eigenen Ordner liegen, wird ein eigener Textkanal angelegt.</p>
     <ol class="steps">
