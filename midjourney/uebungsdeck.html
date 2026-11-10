@@ -240,6 +240,9 @@
   .slide.idx table{font-size:15px}
   .slide.idx td,.slide.idx th{padding:6px 10px}
   .slide.idx a{text-decoration:none;font-weight:600}
+  .slide a.gb{display:inline-block;background:var(--hwz-blue);color:var(--hwz-white);padding:10px 16px;border-radius:var(--r-chip);text-decoration:none;font-weight:600;margin-top:6px}
+  .slide a.gb:hover{background:var(--hwz-dark)}
+  .slide.mod .meta2{color:var(--hwz-muted);font-size:15px;margin:0 0 4px}
   .slide.idx .two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
   @media (max-width:900px){.slide.idx .two{grid-template-columns:1fr}}
 </style>
@@ -264,7 +267,7 @@
     <div class="card head"><h3>Bibliothek</h3><div class="body"><p>13 Übungen für Zwischendurch, Tempo und Vertiefung. Wir wählen sie vor Ort.</p></div></div>
     <div class="card head"><h3>Prompts</h3><div class="body"><p>Auf «Kopieren» klicken, in Midjourney einfügen. Eckige Klammern [so] ersetzt du durch dein Material.</p></div></div>
   </div>
-  <div class="note"><span class="k">Navigation</span><p>Pfeiltasten oder Leertaste blättern. Die Übersicht (Folie 4) springt direkt zu jeder Übung.</p></div>
+  <div class="note"><span class="k">Navigation</span><p>Pfeiltasten oder Leertaste blättern. Die Übersicht springt direkt zu jeder Übung.</p></div>
 </section>
 
 <section class="slide">
@@ -284,6 +287,24 @@ Ergebnis: [was hat funktioniert, was nicht]
 Nächster Schritt: [Anpassung]</code></pre><button class="cp" type="button">Kopieren</button></div>
 </section>
 
+<section class="slide mod" id="m01">
+  <p class="kicker">Modul M01</p>
+  <h2>Einführung generative KI</h2>
+  <p class="meta2">09:10 bis 09:40 · 30 Min.</p>
+  <ul><li>Text, Bild, Video und Audio im Überblick</li><li>Wie Diffusion Models Bilder erzeugen</li><li>Midjourney im Vergleich zu DALL·E, Stable Diffusion, Adobe Firefly, Ideogram</li></ul>
+  
+  <a class="gb" href="https://ralphhutter.gitbook.io/midjourney/module/01-einfuehrung-generative-ki" target="_blank" rel="noopener">Im GitBook vertiefen</a>
+</section>
+
+<section class="slide mod" id="m02">
+  <p class="kicker">Modul M02</p>
+  <h2>Midjourney Platform: Web und Discord</h2>
+  <p class="meta2">09:40 bis 09:50 · 10 Min.</p>
+  <ul><li>Account und Einstellungen prüfen</li><li>Web-Interface und Discord-Interface</li><li>Wann welches Interface</li></ul>
+  
+  <a class="gb" href="https://ralphhutter.gitbook.io/midjourney/module/02-midjourney-platform-web-und-discord" target="_blank" rel="noopener">Im GitBook vertiefen</a>
+</section>
+
 <section class="slide idx">
   <p class="kicker">Übersicht</p>
   <h2>Alle Übungen auf einen Blick</h2>
@@ -293,7 +314,14 @@ Nächster Schritt: [Anpassung]</code></pre><button class="cp" type="button">Kopi
   </div>
 </section>
 
-<section class="slide break"><h1>M03 · Prompt Basics in Discord</h1><h2>Übungen Ü01, Ü02, Ü03, Ü04</h2></section>
+<section class="slide mod" id="m03">
+  <p class="kicker">Modul M03</p>
+  <h2>Prompt Basics in Discord</h2>
+  <p class="meta2">10:00 bis 11:30 · 90 Min.</p>
+  <ul><li>Aufbau eines Prompts, 5-Baustein-Methode</li><li>Negative Prompting, Grundparameter, Variationen und Upscaling</li><li>Chaos, Stylize, Seed</li></ul>
+  <p class="meta2">Kernübungen: <a href="#u01">Ü01</a>, <a href="#u02">Ü02</a>, <a href="#u03">Ü03</a>, <a href="#u04">Ü04</a></p>
+  <a class="gb" href="https://ralphhutter.gitbook.io/midjourney/module/03-prompt-basics-in-discord" target="_blank" rel="noopener">Im GitBook vertiefen</a>
+</section>
 
 <section class="slide ex" id="u01">
 <div class="headrow"><p class="kicker">Ü01 · M03 Prompt Basics in Discord · 5 Min.</p><span class="tag kern">Kern</span></div>
@@ -323,7 +351,14 @@ Nächster Schritt: [Anpassung]</code></pre><button class="cp" type="button">Kopi
 <div class="cols"><div class="col"><h3>Ablauf</h3><ol><li>Einen Prompt deiner Wahl nehmen.</li><li>Dasselbe Motiv dreimal mit verschiedenen --ar Werten generieren.</li><li>Pro Format überlegen: Wo würde das Bild eingesetzt?</li></ol><div class="chips"><span class="chip">--ar</span></div></div><div class="col"><h3>Prompts</h3><div class="pbox"><div class="pl">Quadrat: Social Media, Profile</div><div class="pwrap"><pre><code>a confident professional woman in a Zurich business district, natural light --ar 1:1</code></pre><button class="cp" type="button">Kopieren</button></div></div><details><summary>Weitere Prompts (3)</summary><div class="pbox"><div class="pl">Querformat: Präsentation, Website</div><div class="pwrap"><pre><code>a confident professional woman in a Zurich business district, natural light --ar 16:9</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="pbox"><div class="pl">Hochformat: Story, Mobile</div><div class="pwrap"><pre><code>a confident professional woman in a Zurich business district, natural light --ar 9:16</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="pbox"><div class="pl">Portrait: LinkedIn, Print</div><div class="pwrap"><pre><code>a confident professional woman in a Zurich business district, natural light --ar 4:5</code></pre><button class="cp" type="button">Kopieren</button></div></div></details><div class="note"><span class="k">An deinem Projekt</span><p>Format nach deinem Zielkanal wählen und das Projektmotiv darin erzeugen.</p></div><div class="note warn"><span class="k">Stolperstein</span><p>Der Bildinhalt passt nicht zum Format. Breite Panoramen funktionieren im Hochformat nicht, das Format zum Motiv wählen.</p></div></div></div>
 </section>
 
-<section class="slide break"><h1>M04 · The Art of Prompting</h1><h2>Übungen Ü08, Ü10, Ü15, Ü16</h2></section>
+<section class="slide mod" id="m04">
+  <p class="kicker">Modul M04</p>
+  <h2>The Art of Prompting</h2>
+  <p class="meta2">11:40 bis 12:00 und 13:00 bis 14:30 · 110 Min.</p>
+  <ul><li>Sprache des Stils, Kamera und Licht</li><li>Style Reference, Describe, Edit Model mit Referenzbildern</li><li>Editor: Inpainting, Erweitern</li></ul>
+  <p class="meta2">Kernübungen: <a href="#u08">Ü08</a>, <a href="#u10">Ü10</a>, <a href="#u15">Ü15</a>, <a href="#u16">Ü16</a></p>
+  <a class="gb" href="https://ralphhutter.gitbook.io/midjourney/module/04-the-art-of-prompting-web" target="_blank" rel="noopener">Im GitBook vertiefen</a>
+</section>
 
 <section class="slide ex" id="u08">
 <div class="headrow"><p class="kicker">Ü08 · M04 The Art of Prompting · 15 Min.</p><span class="tag kern">Kern</span></div>
@@ -353,7 +388,14 @@ Nächster Schritt: [Anpassung]</code></pre><button class="cp" type="button">Kopi
 <div class="cols"><div class="col"><h3>Ablauf</h3><ol><li>Ein klares Portrait wählen oder generieren (gutes Licht, neutraler Hintergrund).</li><li>Web: über das Bild-Icon anhängen. Discord: hochladen und URL kopieren.</li><li>Die Person in vier Kontexte setzen. Discord: --edit [URL] ans Ende.</li><li>Ein zweites Bild aus anderem Blickwinkel anhängen und die Ähnlichkeit vergleichen.</li></ol><div class="chips"><span class="chip">Edit Model</span><span class="chip">--edit</span><span class="chip">bis 4 Referenzbilder</span></div></div><div class="col"><h3>Prompts</h3><div class="pbox"><div class="pl">Büro</div><div class="pwrap"><pre><code>the person from the reference image in a modern office, editorial photography --edit [URL]</code></pre><button class="cp" type="button">Kopieren</button></div></div><details><summary>Weitere Prompts (3)</summary><div class="pbox"><div class="pl">Natur</div><div class="pwrap"><pre><code>the person from the reference image hiking in the Swiss Alps, outdoor photography --edit [URL]</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="pbox"><div class="pl">Stadtstrasse</div><div class="pwrap"><pre><code>the person from the reference image walking in a busy Zurich street, street photography --edit [URL]</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="pbox"><div class="pl">Bühne</div><div class="pwrap"><pre><code>the person from the reference image presenting on a stage, conference, spotlight --edit [URL]</code></pre><button class="cp" type="button">Kopieren</button></div></div></details><div class="note"><span class="k">An deinem Projekt</span><p>Eine Figur für dein Projekt, zum Beispiel eine Marken-Persona. Echte Personen nur mit Einwilligung, eigenes Foto oder generiertes Portrait.</p></div><div class="note warn"><span class="k">Stolperstein</span><p>Die Person sieht jedes Mal etwas anders aus, 100 Prozent Konsistenz gibt es nicht. Mehrere Varianten erzeugen und die beste wählen. --cref und --cw entfallen in V8.x.</p></div></div></div>
 </section>
 
-<section class="slide break"><h1>M05 · Anwendungen im Geschäftsalltag</h1><h2>Übungen Ü17, Ü18, Ü22, Ü25</h2></section>
+<section class="slide mod" id="m05">
+  <p class="kicker">Modul M05</p>
+  <h2>Anwendungen im Geschäftsalltag</h2>
+  <p class="meta2">14:45 bis 16:15 · 90 Min.</p>
+  <ul><li>Moodboards, Kampagnen, Social Media, Storyboards</li><li>Employer Branding und Präsentations-Visuals</li><li>Promptentwicklung als Prozess, Prompt-Log</li></ul>
+  <p class="meta2">Kernübungen: <a href="#u17">Ü17</a>, <a href="#u18">Ü18</a>, <a href="#u22">Ü22</a>, <a href="#u25">Ü25</a></p>
+  <a class="gb" href="https://ralphhutter.gitbook.io/midjourney/module/05-konkrete-anwendungen-im-geschaeftsalltag" target="_blank" rel="noopener">Im GitBook vertiefen</a>
+</section>
 
 <section class="slide ex" id="u17">
 <div class="headrow"><p class="kicker">Ü17 · M05 Anwendungen im Geschäftsalltag · 10 Min.</p><span class="tag kern">Kern</span></div>
@@ -474,6 +516,15 @@ Nächster Schritt: [Anpassung]</code></pre><button class="cp" type="button">Kopi
 <h2>Transformation statt Abbild</h2>
 <p class="lede">Ein eigenes Foto in etwas völlig anderes verwandeln: Luxuskampagne aus Produktfoto, Illustration aus Schnappschuss.</p>
 <div class="cols"><div class="col"><h3>Ablauf</h3><ol><li>Ein eigenes Foto hochladen (Produkt, Büro, Schnappschuss).</li><li>Das Bild als Image Prompt einfügen.</li><li>Einen Prompt für den neuen Stil oder Kontext schreiben.</li><li>Optional --sref für zusätzliche Stilvorgabe ergänzen.</li><li>Original und Ergebnis vergleichen.</li></ol><div class="chips"><span class="chip">Image Prompt</span><span class="chip">--iw</span><span class="chip">--sref</span></div></div><div class="col"><h3>Prompt</h3><div class="pbox"><div class="pl">Vorlage</div><div class="pwrap tpl"><pre><code>[Bild-URL] [dein Prompt für neuen Stil oder Kontext] --iw 0.5</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="note warn"><span class="k">Stolperstein</span><p>Das Ergebnis sieht noch wie das Original aus: --iw auf 0.5 senken und eine stärkere Stilangabe setzen.</p></div></div></div>
+</section>
+
+<section class="slide mod" id="m06">
+  <p class="kicker">Modul M06</p>
+  <h2>Ethik und Recht</h2>
+  <p class="meta2">16:15 bis 16:45 · 30 Min.</p>
+  <ul><li>Urheberrecht in der Schweiz, EU AI Act</li><li>Nutzungsbedingungen von Midjourney, Kennzeichnung</li><li>Bias, Repräsentation, Deepfakes</li></ul>
+  
+  <a class="gb" href="https://ralphhutter.gitbook.io/midjourney/module/06-ethische-und-rechtliche-aspekte" target="_blank" rel="noopener">Im GitBook vertiefen</a>
 </section>
 
 <section class="slide">
