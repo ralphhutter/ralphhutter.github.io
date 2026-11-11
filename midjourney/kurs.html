@@ -173,6 +173,11 @@
   .tabs button[aria-selected="true"]{color:var(--hwz-blue);border-bottom-color:var(--hwz-blue)}
   .tabs button:focus-visible{outline:2px solid var(--hwz-blue);outline-offset:-2px}
   .tabpanel[hidden]{display:none}
+  .ll{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+  .ll a{font-weight:600}
+  .ll .ld{display:block;color:var(--hwz-muted);font-size:14px}
+  .tabs{overflow-x:auto}
+  .tabs button{white-space:nowrap}
   a.btn{display:inline-block;background:var(--hwz-blue);color:var(--hwz-white);padding:10px 16px;border-radius:var(--r-chip);text-decoration:none;font-weight:600}
   a.btn:hover{background:var(--hwz-dark)}
   .linkcard .url{font-family:var(--mono);font-size:13px;color:var(--hwz-muted);word-break:break-all;margin:8px 0 14px}
@@ -201,7 +206,10 @@
 
 <div class="tabs" role="tablist" aria-label="Bereiche der Kursübersicht">
   <button type="button" role="tab" id="t-kurs" aria-controls="p-kurs" aria-selected="true">Kursübersicht</button>
-  <button type="button" role="tab" id="t-material" aria-controls="p-material" aria-selected="false" tabindex="-1">Material</button>
+  <button type="button" role="tab" id="t-anleitung" aria-controls="p-anleitung" aria-selected="false" tabindex="-1">Anleitung</button>
+  <button type="button" role="tab" id="t-kursdeck" aria-controls="p-kursdeck" aria-selected="false" tabindex="-1">Kursdeck</button>
+  <button type="button" role="tab" id="t-gitbook" aria-controls="p-gitbook" aria-selected="false" tabindex="-1">GitBook</button>
+  <button type="button" role="tab" id="t-links" aria-controls="p-links" aria-selected="false" tabindex="-1">Links</button>
 </div>
 
 <div class="tabpanel" role="tabpanel" id="p-kurs" aria-labelledby="t-kurs">
@@ -293,16 +301,6 @@
 </section>
 
 <section>
-  <p class="kicker">Links</p>
-  <h2>Dokumentation von Midjourney</h2>
-  <ul>
-    <li><a href="https://docs.midjourney.com/hc/en-us/articles/32023408776205-Prompt-Basics">Prompt Basics</a></li>
-    <li><a href="https://docs.midjourney.com/hc/en-us/articles/32835253061645-Art-of-Prompting">Art of Prompting</a></li>
-    <li><a href="https://docs.midjourney.com/hc/en-us/articles/32859204029709-Parameter-List">Parameter List</a></li>
-  </ul>
-</section>
-
-<section>
   <p class="kicker">Seminarleitung</p>
   <h2>Ralph Hutter</h2>
   <p>Studiengangsleiter HWZ, CAS Digital Business Models and Strategy with AI. Kontakt: <a href="mailto:ralph.hutter@fh-hwz.ch">ralph.hutter@fh-hwz.ch</a></p>
@@ -310,31 +308,65 @@
 
 </div>
 
-<div class="tabpanel" role="tabpanel" id="p-material" aria-labelledby="t-material" hidden>
-
+<div class="tabpanel" role="tabpanel" id="p-anleitung" aria-labelledby="t-anleitung" hidden>
 <section>
-  <p class="kicker">Material</p>
-  <h2>Hier arbeitest du vor, während und nach dem Kurs</h2>
-  <p class="lede">Drei Links: Die Anleitung bereitet dich vor, das Übungsdeck führt dich durch den Tag, das GitBook vertieft die Themen zum Nachlesen.</p>
+  <p class="kicker">Anleitung</p>
+  <h2>Vor dem Seminartag: Discord, Midjourney, Server</h2>
+  <p class="lede">Rund 10 Minuten. Die Reihenfolge ist zwingend: zuerst Discord, danach Midjourney, zuletzt der Server der Masterclass.</p>
+  <div class="card head linkcard"><h3>Einrichten von Midjourney und Discord</h3><div class="body">
+    <p>Schritt für Schritt zu Discord-Account, Midjourney-Abo und dem Server der Masterclass, inklusive eigenem Textkanal.</p>
+    <p class="url">ralphhutter.github.io/midjourney/</p>
+    <a class="btn" href="https://ralphhutter.github.io/midjourney/" target="_blank" rel="noopener">Anleitung öffnen</a>
+  </div></div>
+</section>
+</div>
+
+<div class="tabpanel" role="tabpanel" id="p-kursdeck" aria-labelledby="t-kursdeck" hidden>
+<section>
+  <p class="kicker">Kursdeck</p>
+  <h2>Das Deck führt durch den Tag</h2>
+  <p class="lede">Folien zu Setup, Prompt Basics und allen Übungen. Jeder Prompt lässt sich mit einem Klick kopieren.</p>
+  <div class="card head linkcard"><h3>Übungsdeck</h3><div class="body">
+    <p>Die Folien des Kurstags mit 25 Übungen. Der QR-Code auf der Titelfolie öffnet das Deck auf dem Handy.</p>
+    <p class="url">ralphhutter.github.io/midjourney/uebungsdeck.html</p>
+    <a class="btn" href="https://ralphhutter.github.io/midjourney/uebungsdeck.html" target="_blank" rel="noopener">Kursdeck öffnen</a>
+  </div></div>
+</section>
+</div>
+
+<div class="tabpanel" role="tabpanel" id="p-gitbook" aria-labelledby="t-gitbook" hidden>
+<section>
+  <p class="kicker">GitBook</p>
+  <h2>Die Kursunterlage zum Nachlesen</h2>
+  <p class="lede">Vertiefung zu jedem Modul, auch nach dem Kurs.</p>
+  <div class="card head linkcard"><h3>GitBook</h3><div class="body">
+    <p>Alle sechs Module, Breakout-Themen, Glossar, Cheatsheet und die 25 Übungen mit Anleitung.</p>
+    <p class="url">ralphhutter.gitbook.io/midjourney</p>
+    <a class="btn" href="https://ralphhutter.gitbook.io/midjourney" target="_blank" rel="noopener">GitBook öffnen</a>
+  </div></div>
+</section>
+</div>
+
+<div class="tabpanel" role="tabpanel" id="p-links" aria-labelledby="t-links" hidden>
+<section>
+  <p class="kicker">Links</p>
+  <h2>Werkzeuge und Dokumentation</h2>
   <div class="three">
-    <div class="card head linkcard"><h3>Anleitung zur Vorbereitung</h3><div class="body">
-      <p>Schritt für Schritt zu Discord-Account, Midjourney-Abo und dem Server der Masterclass. Rund 10 Minuten, vor dem Seminartag zu erledigen.</p>
-      <p class="url">ralphhutter.github.io/midjourney/</p>
-      <a class="btn" href="https://ralphhutter.github.io/midjourney/" target="_blank" rel="noopener">Anleitung öffnen</a>
-    </div></div>
-    <div class="card head linkcard"><h3>Übungsdeck</h3><div class="body">
-      <p>Folien zu Setup, Prompt Basics und allen Übungen. Jeder Prompt lässt sich mit einem Klick kopieren. Der QR-Code auf der Titelfolie öffnet das Deck auf dem Handy.</p>
-      <p class="url">ralphhutter.github.io/midjourney/uebungsdeck.html</p>
-      <a class="btn" href="https://ralphhutter.github.io/midjourney/uebungsdeck.html" target="_blank" rel="noopener">Übungsdeck öffnen</a>
-    </div></div>
-    <div class="card head linkcard"><h3>GitBook</h3><div class="body">
-      <p>Die Kursunterlage zum Nachlesen: alle sechs Module, Breakout-Themen, Glossar, Cheatsheet und die 25 Übungen mit Anleitung.</p>
-      <p class="url">ralphhutter.gitbook.io/midjourney</p>
-      <a class="btn" href="https://ralphhutter.gitbook.io/midjourney" target="_blank" rel="noopener">GitBook öffnen</a>
-    </div></div>
+    <div class="card head"><h3>Midjourney</h3><div class="body"><ul class="ll">
+      <li><a href="https://midjourney.com" target="_blank" rel="noopener">midjourney.com</a><span class="ld"> Anmeldung, Galerie, Web-Interface</span></li>
+      <li><a href="https://docs.midjourney.com/hc/en-us/articles/32023408776205-Prompt-Basics" target="_blank" rel="noopener">Prompt Basics</a><span class="ld"> Dokumentation</span></li>
+      <li><a href="https://docs.midjourney.com/hc/en-us/articles/32835253061645-Art-of-Prompting" target="_blank" rel="noopener">Art of Prompting</a><span class="ld"> Dokumentation</span></li>
+      <li><a href="https://docs.midjourney.com/hc/en-us/articles/32859204029709-Parameter-List" target="_blank" rel="noopener">Parameter List</a><span class="ld"> Dokumentation</span></li>
+    </ul></div></div>
+    <div class="card head"><h3>Discord</h3><div class="body"><ul class="ll">
+      <li><a href="https://discord.com" target="_blank" rel="noopener">discord.com</a><span class="ld"> Konto eröffnen und anmelden</span></li>
+      <li><a href="https://discord.gg/jhkGshB78X" target="_blank" rel="noopener">Masterclass-Server</a><span class="ld"> HWZ Midjourney Masterclass 11.11.2026</span></li>
+    </ul></div></div>
+    <div class="card head"><h3>Hilfsmittel</h3><div class="body"><ul class="ll">
+      <li><a href="https://promptfolder.com/midjourney-prompt-helper/" target="_blank" rel="noopener">Midjourney Prompt Helper</a><span class="ld"> Prompts aus Bausteinen zusammenstellen (promptfolder.com)</span></li>
+    </ul></div></div>
   </div>
 </section>
-
 </div>
 
 <footer>
@@ -353,7 +385,7 @@
       t.setAttribute('aria-selected',on?'true':'false'); t.tabIndex=on?0:-1;
       document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
     });
-    if(push!==false)history.replaceState(null,'',id==='t-material'?'#material':location.pathname+location.search);
+    if(push!==false)history.replaceState(null,'',id==='t-kurs'?location.pathname+location.search:'#'+id.slice(2));
     window.scrollTo(0,0);
   }
   tabs.forEach(function(t,i){
@@ -363,7 +395,7 @@
       ev.preventDefault(); var n=tabs[(i+k+tabs.length)%tabs.length]; n.focus(); show(n.id);
     });
   });
-  if(location.hash==='#material')show('t-material',false);
+  var h=location.hash.replace('#',''); if(h&&document.getElementById('t-'+h))show('t-'+h,false);
 })();
 </script>
 </body></html>
