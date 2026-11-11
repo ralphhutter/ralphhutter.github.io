@@ -244,6 +244,13 @@
   .slide.title .qr svg{display:block;width:100%;height:auto}
   .slide.title .qr span{display:block;font-size:12px;line-height:1.3;margin-top:6px;color:var(--hwz-dark)}
   @media (max-width:760px){.slide.title .qr{position:static;margin-top:28px;width:140px}}
+  .slide.ex .card.head h3{color:var(--hwz-white);text-transform:none;letter-spacing:0;font-size:17px;margin:0}
+  .slide.ch table{font-size:15px}
+  .slide.ch td,.slide.ch th{padding:7px 10px}
+  .slide.ch .meta2{color:var(--hwz-muted);font-size:15px;margin:0}
+  .slide.ch .grid{margin:4px 0}
+  .slide.ch a{font-weight:600}
+  .slide.ch a.gb{align-self:flex-start;color:var(--hwz-white)}
   .slide a.gb{display:inline-block;background:var(--hwz-blue);color:var(--hwz-white);padding:10px 16px;border-radius:var(--r-chip);text-decoration:none;font-weight:600;margin-top:6px}
   .slide a.gb:hover{background:var(--hwz-dark)}
   .slide.mod .meta2{color:var(--hwz-muted);font-size:15px;margin:0 0 4px}
@@ -310,6 +317,48 @@ Nächster Schritt: [Anpassung]</code></pre><button class="cp" type="button">Kopi
   <a class="gb" href="https://ralphhutter.gitbook.io/midjourney/module/02-midjourney-platform-web-und-discord" target="_blank" rel="noopener">Im GitBook vertiefen</a>
 </section>
 
+<section class="slide ex ch">
+<p class="kicker">Modul 2 · Setup</p>
+<h2>Step by Step: in vier Schritten startklar</h2>
+<p class="lede">Die Reihenfolge ist zwingend. Wer die Vorbereitung erledigt hat, prüft sie hier nur noch.</p>
+<div class="grid g4"><div class="card head"><h3>1 · Discord</h3><div class="body"><p>Konto eröffnen, E-Mail bestätigen.</p></div></div><div class="card head"><h3>2 · Midjourney</h3><div class="body"><p>Mit Discord anmelden, Basic Plan wählen.</p></div></div><div class="card head"><h3>3 · Server</h3><div class="body"><p>Dem Server «HWZ Midjourney Masterclass» beitreten.</p></div></div><div class="card head"><h3>4 · Eigener Kanal</h3><div class="body"><p>Textkanal mit Name oder Pseudonym anlegen. Deine Bilder landen dort.</p></div></div></div><div class="note"><span class="k">Warum der eigene Kanal</span><p>Du findest deine Bilder und Prompts wieder, ohne durch die Generierungen aller anderen zu scrollen.</p></div>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 2 · Setup</p>
+<h2>Discord.com: Konto, Server, eigener Kanal</h2>
+<div class="cols"><div class="col"><h3>Ablauf</h3><ol><li>Auf discord.com/register ein Konto eröffnen und die E-Mail bestätigen.</li><li>Einladung öffnen: <a href="https://discord.gg/jhkGshB78X" target="_blank" rel="noopener">discord.gg/jhkGshB78X</a>, Beitritt bestätigen.</li><li>Auf das <b>+</b> neben «Textkanäle» klicken und den Kanal mit deinem Namen oder einem Pseudonym benennen.</li><li>In deinem Kanal arbeiten wir den ganzen Tag.</li></ol></div><div class="col"><div class="note open"><span class="k">Kein + bei den Textkanälen?</span><p>Schreib eine Nachricht in den Kanal «Allgemein». Danach wird der Kanal angelegt.</p></div><div class="note"><span class="k">Eigener Discord-Account</span><p>Wer schon einen hat, verwendet ihn und überspringt das Eröffnen.</p></div></div></div>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 2 · Setup</p>
+<h2>Midjourney.com: Anmeldung und Abo</h2>
+<div class="cols"><div class="col"><h3>Ablauf</h3><ol><li>midjourney.com/account öffnen.</li><li><b>Continue with Discord</b> wählen und mit dem Discord-Konto anmelden, nicht mit Google.</li><li>Den Basic Plan mit monatlicher Zahlung wählen (USD 10). Das reicht für die Masterclass.</li></ol></div><div class="col"><div class="note ok"><span class="k">Ein Konto, zwei Wege</span><p>Midjourney verknüpft Web und Discord über dasselbe Konto. Einmal eingerichtet, nutzt du beide.</p></div><div class="note warn"><span class="k">Abo nicht im Seminarpreis</span><p>Das Abo schliesst du selbst ab. Wer Midjourney danach nicht weiter braucht, kündigt es.</p></div></div></div>
+</section>
+
+<section class="slide break"><h1>Checkpoint</h1><h2>Discord bestätigt, bei Midjourney angemeldet, Abo aktiv, im Server, eigener Kanal vorhanden. Wer noch fehlt, meldet sich jetzt.</h2></section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 2 · Setup</p>
+<h2>Zwei Interfaces: Web und Discord</h2>
+<p class="lede">Die Wahl des Interfaces ist eine Workflow-Entscheidung, keine Geschmacksfrage.</p>
+<table><thead><tr><th>Funktion</th><th>Web (midjourney.com)</th><th>Discord</th></tr></thead><tbody><tr><td>Prompt-Eingabe</td><td>Formular in der Imagine-Bar</td><td><code>/imagine</code>-Befehl</td></tr><tr><td>Galerie</td><td>Ja, mit Ordnern</td><td>Nur die Chathistorie</td></tr><tr><td>Bildbearbeitung</td><td>Editor mit Edit Model</td><td>Buttons unter dem Bild</td></tr><tr><td>Stile, Moodboards, Profile</td><td>Anlegen und nutzen</td><td>Nur nutzen (<code>--sref</code>, <code>--p</code>)</td></tr><tr><td><code>/blend</code></td><td>Nicht verfügbar</td><td>2 bis 5 Bilder</td></tr><tr><td>Parameter</td><td>Formularfelder</td><td>Direkt im Befehl (<code>--ar 16:9</code>)</td></tr><tr><td>Im Kurs</td><td>Modul 4</td><td>Modul 3</td></tr></tbody></table><div class="note"><span class="k">Explore als Lernwerkzeug</span><p>Unter midjourney.com/explore siehst du fremde Generierungen samt Prompt. Ein Bild anklicken, Prompt lesen, als Ausgangspunkt nutzen.</p></div>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 2 · Setup</p>
+<h2>Discord Walkthrough: Befehle und Buttons</h2>
+<div class="cols"><div class="col"><h3>Befehle</h3><table><thead><tr><th>Befehl</th><th>Funktion</th></tr></thead><tbody><tr><td><code>/imagine</code></td><td>Bild generieren</td></tr><tr><td><code>/settings</code></td><td>Standardeinstellungen</td></tr><tr><td><code>/describe</code></td><td>Bild hochladen, Prompt-Vorschläge erhalten</td></tr><tr><td><code>/blend</code></td><td>2 bis 5 Bilder kombinieren</td></tr><tr><td><code>/info</code></td><td>Konto und verbleibende GPU-Zeit</td></tr></tbody></table></div><div class="col"><h3>Buttons unter dem Bild</h3><table><thead><tr><th>Button</th><th>Aktion</th></tr></thead><tbody><tr><td>U1 bis U4</td><td>Eines der vier Bilder in voller Auflösung</td></tr><tr><td>V1 bis V4</td><td>Neue Varianten zu einem der vier Bilder</td></tr><tr><td>Redo</td><td>Gleicher Prompt, neues Raster</td></tr></tbody></table></div></div>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 2 · Setup</p>
+<h2>Erste Generierung in deinem Kanal</h2>
+<div class="cols"><div class="col"><h3>Ablauf</h3><ol><li><code>/settings</code> eingeben: Modellversion V8.2, Fast Mode prüfen.</li><li><code>/info</code> eingeben: verbleibende GPU-Zeit ansehen.</li><li>Den Prompt rechts absenden. Vier Varianten erscheinen.</li><li><b>U2</b> klicken und das Bild hochskalieren.</li></ol></div><div class="col"><h3>Prompt</h3><div class="pbox"><div class="pl">Testprompt</div><div class="pwrap"><pre><code>/imagine prompt: a simple geometric shape, clean white background, minimal design</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="note ok"><span class="k">V8.2 ist Standard</span><p>Seit dem 24.07.2026 rechnet Midjourney ohne Angabe mit V8.2. Ein <code>--v</code> brauchst du nicht.</p></div></div></div>
+</section>
+
+<section class="slide break"><h1>Checkpoint</h1><h2>Der Bot antwortet in deinem Kanal, vier Varianten sind da, /settings zeigt V8.2.</h2></section>
+
 <section class="slide idx">
   <p class="kicker">Übersicht</p>
   <h2>Alle Übungen auf einen Blick</h2>
@@ -326,6 +375,86 @@ Nächster Schritt: [Anpassung]</code></pre><button class="cp" type="button">Kopi
   <ul><li>Aufbau eines Prompts, 5-Baustein-Methode</li><li>Negative Prompting, Grundparameter, Variationen und Upscaling</li><li>Chaos, Stylize, Seed</li></ul>
   <p class="meta2">Kernübungen: <a href="#u01">Ü01</a>, <a href="#u02">Ü02</a>, <a href="#u03">Ü03</a>, <a href="#u04">Ü04</a></p>
   <a class="gb" href="https://ralphhutter.gitbook.io/midjourney/module/03-prompt-basics-in-discord" target="_blank" rel="noopener">Im GitBook vertiefen</a>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 3 · Prompt Basics in Discord</p>
+<h2>Was ein guter Prompt braucht</h2>
+<p class="lede">Du musst wissen, was du willst. Was du nicht sagst, würfelt Midjourney.</p>
+<div class="cols"><div class="col"><h3>Nicht empfohlen</h3><div class="pbox"><div class="pl">Wie eine Suchanfrage</div><div class="pwrap"><pre><code>woman in office</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="chips"><span class="chip">Subject</span><span class="chip">Medium</span><span class="chip">Environment</span><span class="chip">Lighting</span><span class="chip">Color</span><span class="chip">Mood</span></div></div><div class="col"><h3>Besser</h3><div class="pbox"><div class="pl">Strukturiert</div><div class="pwrap"><pre><code>a senior marketing manager in a modern open-plan office, editorial photography style, wide shot, natural window light, focused and calm mood --ar 16:9</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="note"><span class="k">Leerstellen werden zufällig gefüllt</span><p>Vage Prompts liefern Vielfalt, aber selten das Detail, das du brauchst. Je klarer du Motiv, Medium, Umgebung, Licht, Farbe und Stimmung benennst, desto näher liegt das Ergebnis an deiner Idee.</p></div></div></div>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 3 · Prompt Basics in Discord</p>
+<h2>Die 5-Baustein-Methode</h2>
+<p class="lede">Strukturierte Prompts legen Stil, Bildausschnitt, Licht und Stimmung fest.</p>
+<table><thead><tr><th>Baustein</th><th>Frage</th><th>Beispiel</th></tr></thead><tbody><tr><td><b>Subject</b></td><td>Was oder wer ist im Bild?</td><td><code>a young professional woman</code></td></tr><tr><td><b>Style</b></td><td>Welche Stilrichtung?</td><td><code>editorial photography, minimalist</code></td></tr><tr><td><b>Composition</b></td><td>Welcher Ausschnitt, welche Perspektive?</td><td><code>close-up portrait, centered</code></td></tr><tr><td><b>Lighting</b></td><td>Welches Licht?</td><td><code>soft studio light, overcast</code></td></tr><tr><td><b>Mood</b></td><td>Welche Atmosphäre?</td><td><code>calm, confident, neutral</code></td></tr></tbody></table><div class="note"><span class="k">Iterativ aufbauen</span><p>Starte mit Subject und Style. Composition und Lighting ergänzt du in der zweiten Runde. Das ist schneller als der perfekte erste Prompt.</p></div>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 3 · Prompt Basics in Discord</p>
+<h2>Einen Prompt Schritt für Schritt aufbauen</h2>
+<div class="cols"><div class="col"><h3>Ablauf</h3><ol><li>Subject und Style festlegen.</li><li>Mood ergänzen.</li><li>Composition und Lighting hinzufügen.</li><li>Mit dem V-Button variieren, die beste Variante mit U hochskalieren.</li></ol></div><div class="col"><h3>Drei Stufen</h3><div class="pbox"><div class="pl">Schritt 1</div><div class="pwrap"><pre><code>a senior marketing manager, editorial photography minimalist style --ar 16:9</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="pbox"><div class="pl">Schritt 2</div><div class="pwrap"><pre><code>a senior marketing manager, editorial photography minimalist style, calm and confident mood --ar 16:9</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="pbox"><div class="pl">Schritt 3</div><div class="pwrap"><pre><code>a senior marketing manager in a modern open-plan office, editorial photography minimalist style, wide shot, natural window light, focused and calm mood --ar 16:9</code></pre><button class="cp" type="button">Kopieren</button></div></div></div></div>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 3 · Prompt Basics in Discord</p>
+<h2>Prompt-Struktur in Discord</h2>
+<p class="lede">Der Befehl, dann das Motiv und der Stil, am Ende die Parameter.</p>
+<div class="pbox"><div class="pl">Schablone</div><div class="pwrap tpl"><pre><code>/imagine prompt &lt;subject&gt; &lt;style&gt; --&lt;parameters&gt;</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="pbox"><div class="pl">Beispiel</div><div class="pwrap"><pre><code>/imagine prompt: Cat, in the style of Risograph --ar 16:9</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="note"><span class="k">Mehr dazu</span><p>Prompt-Grundlagen und Parameterliste stehen in der Midjourney-Dokumentation: <a href="https://docs.midjourney.com/docs/prompts" target="_blank" rel="noopener">docs.midjourney.com/docs/prompts</a></p></div>
+</section>
+
+<section class="slide break"><h1>Checkpoint</h1><h2>Ein strukturierter Prompt nach den fünf Bausteinen läuft, mindestens --ar ist gesetzt.</h2></section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 3 · Prompt Basics in Discord</p>
+<h2>Negative Prompting und Gewichtung</h2>
+<p class="lede">Mit --no schliesst du Störendes aus. Was dominiert, steuert in V8.2 der Prompttext selbst.</p>
+<div class="cols"><div class="col"><h3>--no: Elemente ausschliessen</h3><div class="pbox"><div class="pl">Produktbild</div><div class="pwrap"><pre><code>product photo of a swiss watch, clean studio setup --no text, watermark, reflections, shadows</code></pre><button class="cp" type="button">Kopieren</button></div></div><ul><li><code>--no people</code> für Produkt und Architektur</li><li><code>--no text, watermark</code> für cleane Bilder</li><li><code>--no cluttered background</code> für ruhige Kompositionen</li></ul><div class="note warn"><span class="k">Nicht auf Verdacht</span><p>Setze --no erst ein, wenn ein Element wiederholt stört. Zu viele Einträge lenken das Bild in unerwartete Richtungen.</p></div></div><div class="col"><h3>Gewichtung in V8.2</h3><ul><li><b>Beschreibung:</b> Hauptmotiv konkret nennen, Nebenelemente als Attribut formulieren.</li><li><b>Reihenfolge:</b> Das dominante Konzept steht am Anfang.</li><li><b>--no:</b> Unerwünschtes ausschliessen.</li></ul><div class="pbox"><div class="pl">Stadt dominiert, Pflanzen sind Attribut</div><div class="pwrap"><pre><code>a futuristic city skyline, its towers partly overgrown with climbing plants and moss --ar 16:9</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="note"><span class="k">Ältere Syntax</span><p>Multi-Prompts mit <code>::</code> funktionieren nur bis V6.1, nicht in V7 und V8.x.</p></div></div></div>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 3 · Prompt Basics in Discord</p>
+<h2>Variationen und Upscaling</h2>
+<p class="lede">Die vier Vorschläge sind der Ausgangspunkt, nicht das Ergebnis.</p>
+<table><thead><tr><th>Aktion</th><th>Funktion</th></tr></thead><tbody><tr><td><b>U1 bis U4</b></td><td>Eines der vier Bilder in voller Auflösung erstellen</td></tr><tr><td><b>V1 bis V4</b></td><td>Neue Varianten zu einem der vier Bilder</td></tr><tr><td><b>Upscale Subtle</b></td><td>Feinere Hochauflösung, Details bleiben erhalten</td></tr><tr><td><b>Upscale Creative</b></td><td>Kreativere Hochauflösung, mehr Interpretation</td></tr><tr><td><b>Redo</b></td><td>Gleicher Prompt, neues Raster</td></tr></tbody></table><div class="grid g2"><div class="note ok"><span class="k">Erst U, dann V</span><p>Variationen auf dem hochskalierten Bild werden besser als auf der Vorschau.</p></div><div class="note"><span class="k">SD und HD</span><p>Die Upscaler gibt es für SD-Bilder. Ein Bild mit <code>--hd</code> entsteht direkt in 2048 px und lässt sich nicht weiter hochskalieren.</p></div></div>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 3 · Prompt Basics in Discord</p>
+<h2>Nach dem Upscale weiterarbeiten</h2>
+<p class="lede">Basisbild erzeugen, Format anpassen, Details korrigieren. Kein Neustart von null.</p>
+<div class="grid g3"><div class="card head"><h3>Zoom Out</h3><div class="body"><p>Inhalt ausserhalb des Frames hinzufügen. Das Modell führt den Kontext des Bildes fort.</p></div></div><div class="card head"><h3>Pan</h3><div class="body"><p>Das Bild nach links, rechts, oben oder unten verlängern. Gut für Panorama und Banner.</p></div></div><div class="card head"><h3>Vary Region</h3><div class="body"><p>Einen Bereich markieren und gezielt neu generieren. Der Rest bleibt unverändert.</p></div></div></div><div class="pbox"><div class="pl">Edit Model in Discord</div><div class="pwrap"><pre><code>/imagine prompt: replace the background with a sunlit concrete wall --edit https://example.com/produkt.png</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="note warn"><span class="k">Discord und Web</span><p>In Discord rechnen Pan, Zoom Out und Vary Region mit V6.1. Im Web laufen dieselben Schritte über das Edit Model im Editor, siehe Modul 4.</p></div>
+</section>
+
+<section class="slide break"><h1>Checkpoint</h1><h2>Mindestens ein Bild ist hochskaliert, eine Variation ist erzeugt.</h2></section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 3 · Prompt Basics in Discord</p>
+<h2>Grundparameter</h2>
+<p class="lede">Wenige Regler, gezielt eingesetzt, machen den Unterschied zwischen Zufall und Kontrolle.</p>
+<table><thead><tr><th>Parameter</th><th>Funktion</th><th>Beispiel</th></tr></thead><tbody><tr><td><code>--ar</code></td><td>Seitenverhältnis</td><td><code>--ar 16:9</code>, <code>--ar 4:5</code></td></tr><tr><td><code>--v</code></td><td>Modellversion, Standard V8.2</td><td><code>--v 8.2</code></td></tr><tr><td><code>--seed</code></td><td>Reproduzierbarkeit</td><td><code>--seed 12345</code></td></tr><tr><td><code>--no</code></td><td>Unerwünschtes ausschliessen</td><td><code>--no text</code></td></tr><tr><td><code>--stylize</code></td><td>Künstlerischer Spielraum, 0 bis 1000</td><td><code>--stylize 100</code></td></tr><tr><td><code>--chaos</code></td><td>Varianz der vier Vorschläge, 0 bis 100</td><td><code>--chaos 0</code></td></tr><tr><td><code>--hd</code> / <code>--sd</code></td><td>Auflösung: HD nativ 2048 px, SD Standard</td><td><code>--hd</code></td></tr></tbody></table><div class="note warn"><span class="k">Entfallen in V8.1 und V8.2</span><p><code>--q</code>, Multi-Prompts mit <code>::</code> und der Turbo Mode. Ältere Prompts vor der Wiederverwendung bereinigen.</p></div>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 3 · Prompt Basics in Discord</p>
+<h2>--stylize und --chaos im Vergleich</h2>
+<div class="cols"><div class="col"><h3>--stylize: wie frei interpretiert Midjourney?</h3><div class="pbox"><div class="pl">Eng am Prompt</div><div class="pwrap"><pre><code>product shot, minimal studio --ar 4:5 --stylize 100</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="pbox"><div class="pl">Mehr Spielraum</div><div class="pwrap"><pre><code>product shot, minimal studio --ar 4:5 --stylize 750</code></pre><button class="cp" type="button">Kopieren</button></div></div></div><div class="col"><h3>--chaos: wie verschieden sind die vier Bilder?</h3><div class="pbox"><div class="pl">Ähnliche Varianten</div><div class="pwrap"><pre><code>product shot, minimal studio --ar 4:5 --chaos 0</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="pbox"><div class="pl">Mehr Diversität</div><div class="pwrap"><pre><code>product shot, minimal studio --ar 4:5 --chaos 50</code></pre><button class="cp" type="button">Kopieren</button></div></div></div></div><div class="note"><span class="k">Faustregel</span><p>Kampagnenbilder: <code>--chaos 0</code> und <code>--stylize 100</code>. Exploration: <code>--chaos 50</code> und <code>--stylize 500</code>.</p></div>
+</section>
+
+<section class="slide ex ch">
+<p class="kicker">Modul 3 · Prompt Basics in Discord</p>
+<h2>--seed: Ergebnisse wiederholen</h2>
+<p class="lede">Gleicher Seed und gleicher Prompt liefern sehr ähnliche Bilder. Für V8.2 gibt Midjourney 99 Prozent identische Bilder an.</p>
+<div class="cols"><div class="col"><h3>Seed ermitteln</h3><ol><li>Auf das Bild mit dem Briefumschlag-Emoji reagieren.</li><li>Midjourney schickt die Seed-Nummer per Direktnachricht.</li><li>Seed zusammen mit dem Prompt im Prompt-Log festhalten.</li></ol></div><div class="col"><div class="pbox"><div class="pl">Prompt mit Seed</div><div class="pwrap"><pre><code>a young professional in a creative workspace, editorial style, natural light --ar 16:9 --seed 84521</code></pre><button class="cp" type="button">Kopieren</button></div></div><div class="note ok"><span class="k">Für Serien</span><p>Bei Storyboards und Kampagnen-Sets den Seed des besten Ergebnisses sofort notieren. Nur so kommst du später auf denselben Stil zurück.</p></div></div></div>
+</section>
+
+<section class="slide ex ch" id="m03-fazit">
+<p class="kicker">Modul 3 · Zusammenfassung</p>
+<h2>Drei Dinge nimmst du mit</h2>
+<div class="grid g3"><div class="card head"><h3>Struktur</h3><div class="body"><p>Fünf Bausteine: Subject, Style, Composition, Lighting, Mood. Iterativ aufbauen.</p></div></div><div class="card head"><h3>Kontrolle</h3><div class="body"><p><code>--ar</code>, <code>--no</code>, <code>--stylize</code>, <code>--chaos</code> und <code>--seed</code> steuern das Ergebnis.</p></div></div><div class="card head"><h3>Weiterentwicklung</h3><div class="body"><p>Erst U, dann V. Zoom Out, Pan und Vary Region statt Neustart.</p></div></div></div>
+<p class="meta2">Jetzt du: Kernübungen <a href="#u01">Ü01</a>, <a href="#u02">Ü02</a>, <a href="#u03">Ü03</a>, <a href="#u04">Ü04</a></p>
+<a class="gb" href="https://ralphhutter.gitbook.io/midjourney/module/03-prompt-basics-in-discord" target="_blank" rel="noopener">Modul 3 im GitBook nachlesen</a>
 </section>
 
 <section class="slide ex" id="u01">
