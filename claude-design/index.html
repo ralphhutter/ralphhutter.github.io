@@ -161,13 +161,15 @@
   @media (max-width:700px){.masthead{padding:40px 20px 36px}.wrap{padding:0 20px 64px}
                            section{padding-top:44px}.logo{width:190px;height:44px}}
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+  .grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+  @media (max-width:700px){.grid.two{grid-template-columns:1fr}}
 </style>
 
 <header class="masthead">
   <div class="masthead-inner">
     <div class="logo" role="img" aria-label="HWZ Hochschule für Wirtschaft Zürich"></div>
     <h1>Claude Design: Brandkonforme Inhalte mit Claude</h1>
-    <p class="lede">Eine eigene Brand Library in Claude anlegen und daraus Präsentation, Styleguide, Social-Media-Templates und Flyer im Markenbild erzeugen. An einem Tag.</p>
+    <p class="lede">Die eigene Marke in Claude verankern und als Skill-Paket im Unternehmen einsetzen. An einem Tag, an der eigenen Marke.</p>
     <div class="meta">
       <span>Seminar, 1 Tag</span>
       <span>Präsenz, HWZ Zürich</span>
@@ -181,52 +183,50 @@
 
   <section>
     <p class="kicker">Seminar</p>
-    <h2>Artefakte, die zur eigenen Marke passen</h2>
+    <h2>Die Marke in Claude verankern</h2>
     <p class="lede">Hands-on-Seminar zu Claude Design und Skills, gearbeitet wird an der eigenen Marke.</p>
-    <p>Mit Claude Design erzeugt Claude nicht mehr nur Texte, sondern fertige visuelle Artefakte: Präsentationen, Dokumente, Social-Media-Grafiken und Druckvorlagen. Damit diese Artefakte zur eigenen Marke passen, braucht Claude die Markenvorgaben als Grundlage. Die Brand Library hält Farben, Schriften, Logos, Tonalität und Gestaltungsregeln fest, und jedes neue Artefakt baut auf ihr auf.</p>
-    <p>Das Seminar fügt sich nahtlos in die bestehende Seminarreihe «Claude Code» der HWZ ein und folgt ihrem Hands-on-Konzept. Nach einer Einführung und der Konfiguration führt ein Walkthrough Schritt für Schritt durch die App. Die Teilnehmenden arbeiten direkt mit ihren eigenen Markeninhalten in Claude. Die Ergebnisse lassen sich exportieren und im Unternehmen als Skill-Dateien direkt einsetzen.</p>
-    <p>Ein Exkurs zeigt, wie ein Skill Bilder im Bildstil der Marke über eine Bild-API erzeugt und wie Claude und Claude Design dabei zusammenspielen.</p>
-    <div class="note">
-      <span class="k">Abgrenzung</span>
-      <p>Das Seminar ist kein Kurs für Bildbearbeitung mit KI. Dafür gibt es an der HWZ den Kurs «Bildbearbeitung mit KI». Ein eigener Block führt aber in die Bildgenerierung aus Claude via API ein: Ein Skill erzeugt Bilder im Bildstil der Marke, und Claude Design setzt sie in die Artefakte ein.</p>
-    </div>
+    <p>Claude erstellt inzwischen ganze Präsentationen, Flyer, Landing Pages und Social-Media-Grafiken. Ob sie zur Marke passen, hängt davon ab, was Claude über die Marke weiss. In vielen Teams ist die Marke über Werkzeuge und Köpfe verteilt: Die Tonalität steht in einem PDF, die Vorlagen liegen bei Einzelnen, und ob ein Text nach der Marke klingt, prüft niemand systematisch.</p>
+    <p>Das Seminar verankert die Marke an einem Ort. Wer danach Inhalte erstellt, muss die Marke nicht mehr in jeden Prompt schreiben: Claude kennt sie, schreibt in ihrer Stimme und prüft gegen sie.</p>
   </section>
 
   <section>
     <p class="kicker">Ergebnis</p>
-    <h2>Am Ende des Tages vorhanden</h2>
-    <div class="grid">
-      <div class="card"><h3>Brand Library</h3><p>Farben, Typografie, Logo-Regeln und Tonalität der eigenen Marke in Claude Design.</p></div>
-      <div class="card"><h3>Styleguide</h3><p>Die Markenvorgaben als Dokument zum Weitergeben.</p></div>
-      <div class="card"><h3>Präsentation</h3><p>Im Markenbild, exportiert als PPTX.</p></div>
-      <div class="card"><h3>Social-Media-Templates</h3><p>Ein Set in mehreren Formaten aus einer Vorlage.</p></div>
-      <div class="card"><h3>Flyer</h3><p>Als druckfähiges PDF, geprüft gegen die Brand Guidelines.</p></div>
-      <div class="card"><h3>Eigene Skills</h3><p>Für wiederkehrende Markeninhalte, exportierbar für den Einsatz im Unternehmen.</p></div>
+    <h2>Ein Brand Kit für Claude</h2>
+    <p>Jede Teilnehmerin und jeder Teilnehmer nimmt für die eigene Marke vier Teile mit. Alle Teile sind exportierbare Skill-Dateien und lassen sich in der Praxis direkt einsetzen.</p>
+    <div class="grid two">
+      <div class="card"><h3>Brand Library</h3><p>Design System in Claude Design mit Farben, Schriften, Logos und Komponenten. Grundlage für alle Formate.</p></div>
+      <div class="card"><h3>Brand Voice Writer</h3><p>Schreibt Texte in der Stimme der Marke, als Corporate Voice und als CEO Voice. Für Social-Media-Posts, Blogposts und interne Mitteilungen.</p></div>
+      <div class="card"><h3>Brand Checker</h3><p>Prüft Texte und Artefakte gegen die Brand Guidelines, visuell und in der Tonalität, und meldet Abweichungen mit Korrekturvorschlag.</p></div>
+      <div class="card"><h3>Brand-Artefakt-Skills</h3><p>Je ein Skill pro wiederkehrendem Format: PowerPoint, Social-Media-Templates, Flyer, Landing Pages, HTML-Reports, Diagramme.</p></div>
     </div>
   </section>
 
   <section>
-    <p class="kicker">Inhalte</p>
-    <h2>Von der Einführung bis zum eigenen Skill</h2>
+    <p class="kicker">Inhalt und Aufbau</p>
+    <h2>Hands-on, Schritt für Schritt</h2>
+    <p>Das Seminar fügt sich nahtlos in die bestehende Seminarreihe «Claude Code» der HWZ ein und folgt ihrem Hands-on-Konzept. Nach einer Einführung und der Konfiguration führt ein Walkthrough Schritt für Schritt durch die App. Die Teilnehmenden arbeiten direkt mit ihren eigenen Markeninhalten in Claude. Die Artefakte, die in den Übungen entstehen, sind die Probe aufs Exempel für das Brand Kit.</p>
     <ul>
-      <li><strong>Einführung:</strong> Brand Guidelines, Styleguide, Design System und Brand Library, Einordnung von Claude Design in Claude</li>
-      <li><strong>Konfiguration:</strong> Plan, Verbrauch und Limits, Datenschutz, Markenquellen hochladen und analysieren</li>
-      <li><strong>Brand Library:</strong> anlegen und gegen die Marke prüfen</li>
-      <li><strong>Styleguide und Präsentation</strong> erstellen und exportieren</li>
-      <li><strong>Social-Media-Templates und Flyer</strong> erstellen, Brand-Check gegen die Guidelines</li>
-      <li><strong>Exkurs:</strong> Skill für Bildproduktion via API, Zusammenspiel von Claude und Claude Design</li>
-      <li><strong>Transfer:</strong> Brand Library im Team teilen und pflegen, eigene Skills für wiederkehrende Markeninhalte erstellen und für den Einsatz im Unternehmen exportieren</li>
+      <li><strong>Einführung und Konfiguration:</strong> Claude Design in Claude einordnen, Plan, Verbrauch und Limits, Datenschutz, Markenquellen hochladen und analysieren</li>
+      <li><strong>Brand Library</strong> in Claude Design aus dem eigenen Markenmaterial anlegen und gegen die Marke prüfen</li>
+      <li><strong>Brand Voice Writer:</strong> Corporate Voice und CEO Voice festhalten, Posts für Social Media, Blog und interne Kanäle schreiben</li>
+      <li><strong>Brand Checker:</strong> Texte und Artefakte gegen die Guidelines prüfen und korrigieren</li>
+      <li><strong>Brand-Artefakt-Skills:</strong> PowerPoint, Social-Media-Templates, Flyer, Landing Pages, HTML-Reports und Diagramme im Markenbild erzeugen</li>
+      <li><strong>Exkurs:</strong> Videoavatar, digitale Stimmen und Bildmodelle für Corporate-Bildwelten, gezeigt als Demo</li>
+      <li><strong>Transfer:</strong> Skills exportieren, im Team teilen und pflegen</li>
     </ul>
+    <div class="note">
+      <span class="k">Abgrenzung</span>
+      <p>Das Seminar ist kein Kurs für Bildbearbeitung mit KI. Dafür gibt es an der HWZ den Kurs «Bildbearbeitung mit KI». Es ist auch kein Designkurs: Gestaltungsgrundlagen werden nicht vermittelt, die eigene Marke liegt als Vorgabe vor.</p>
+    </div>
   </section>
 
   <section>
-    <p class="kicker">Zielgruppe</p>
+    <p class="kicker">Zielpublikum</p>
     <h2>Für wen das Seminar gedacht ist</h2>
     <ul>
-      <li>Fachleute aus Marketing und Kommunikation</li>
-      <li>Kreative</li>
-      <li>Vibecoder, die ihre Apps und Produkte im eigenen Markenbild auftreten lassen wollen</li>
-      <li>Produktteams</li>
+      <li>Marketing- und Kommunikationsteams, die den Markenauftritt verantworten</li>
+      <li>Kreative, die Inhalte im Markenbild produzieren</li>
+      <li>Vibecoder und Produktteams, die Apps und Produkte im eigenen Markenbild auftreten lassen wollen</li>
       <li>Anwenderinnen und Anwender von Claude, die Claude Design und Skills kennenlernen wollen</li>
     </ul>
   </section>
@@ -239,7 +239,7 @@
       <li>Bezahlter Claude-Plan, mindestens Pro mit aktivierter Extra Usage, empfohlen Max</li>
       <li>Privater Laptop (Mac oder Windows) mit Installationsrechten</li>
       <li>Bei Team- oder Enterprise-Accounts: Claude Design, Artifacts und Design Systems von der Organisation freigeschaltet</li>
-      <li>Eigenes Markenmaterial: Logo, Farben, Schriften, bestehende Dokumente im Markenbild</li>
+      <li>Eigenes Markenmaterial: Logo, Farben, Schriften, Brand Guidelines, bestehende Dokumente und Texte im Markenbild</li>
       <li>Keine Design- oder Programmierkenntnisse nötig</li>
     </ul>
     <div class="note warn">
@@ -248,23 +248,23 @@
     </div>
     <div class="note">
       <span class="k">Kosten</span>
-      <p>Claude Design ist sehr tokenintensiv, ein Kurstag übersteigt die Limits des Free-Plans deutlich. Die Kosten für den Claude-Plan sind nicht in der Kursgebühr enthalten und werden von den Teilnehmenden getragen.</p>
+      <p>Claude Design ist sehr tokenintensiv, ein Kurstag übersteigt die Limits des Free-Plans deutlich. Die Kosten für den Claude-Plan sind nicht in den Studiengebühren enthalten und werden von den Teilnehmenden getragen.</p>
     </div>
   </section>
 
   <section>
-    <p class="kicker">Details</p>
+    <p class="kicker">Key Facts</p>
     <h2>Auf einen Blick</h2>
     <div class="scroll">
       <table>
         <tbody>
-          <tr><td>Format</td><td>Präsenz, Seminar</td></tr>
           <tr><td>Dauer</td><td>1 Tag, 08:15 bis 16:45</td></tr>
-          <tr><td>Ort</td><td>HWZ Hochschule für Wirtschaft Zürich</td></tr>
-          <tr><td>Preis</td><td>offen</td></tr>
-          <tr><td>Sprache</td><td>Deutsch</td></tr>
-          <tr><td>Termine</td><td>offen</td></tr>
-          <tr><td>Leitung</td><td>Ralph Hutter</td></tr>
+          <tr><td>Daten</td><td>offen</td></tr>
+          <tr><td>Studiengebühren</td><td>offen</td></tr>
+          <tr><td>Sprache</td><td>Die Unterrichtssprache ist Deutsch.</td></tr>
+          <tr><td>Format</td><td>Präsenz, HWZ Hochschule für Wirtschaft Zürich</td></tr>
+          <tr><td>Dozierende</td><td>Ralph Hutter, Studiengangsleiter HWZ</td></tr>
+          <tr><td>Beratung und Anmeldung</td><td>HWZ Academy</td></tr>
         </tbody>
       </table>
     </div>
