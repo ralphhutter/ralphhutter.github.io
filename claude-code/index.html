@@ -187,10 +187,10 @@
   <div class="masthead-inner">
     <div class="logo" role="img" aria-label="HWZ Hochschule für Wirtschaft Zürich"></div>
     <h1>Einrichten von Claude Code</h1>
-    <p class="lede">Vier Schritte vor dem Seminar: Laptop, Claude-Pro-Abo, Claude Code installieren, Obsidian.</p>
+    <p class="lede">Fünf Schritte vor dem Seminar: Laptop, Claude-Pro-Abo, Claude Code im Terminal, Obsidian, Claude Desktop.</p>
     <div class="meta">
-      <span>Version 0.4.0</span>
-      <span>Stand 14.11.2026</span>
+      <span>Version 0.5.0</span>
+      <span>Stand 20.11.2026</span>
       <span>Claude Code für Einsteiger 25./26.11.2026</span>
       <span>Ralph Hutter</span>
     </div>
@@ -201,17 +201,18 @@
 
   <section>
     <p class="kicker">Übersicht</p>
-    <h2>Vier Dinge, ca. 30 Minuten</h2>
+    <h2>Fünf Dinge, ca. 30 Minuten</h2>
     <p class="lede">Die Vorbereitung ist bis spätestens <strong>Dienstag, 24.11.2026</strong> zu erledigen. Das Seminar startet am ersten Morgen direkt mit Claude Code.</p>
     <div class="note warn">
       <div class="k">Reihenfolge zwingend</div>
-      <p>Zuerst das Claude-Pro-Abo, danach Claude Code installieren. Die Anmeldung in Claude Code funktioniert nur mit einem bezahlten Konto.</p>
+      <p>Zuerst das Claude-Pro-Abo, danach Claude Code und Claude Desktop installieren. Die Anmeldung funktioniert nur mit einem bezahlten Konto. Im Seminar kommen beide Zugänge zum Einsatz, die Desktop App und das Terminal.</p>
     </div>
     <div class="grid">
       <div class="card head"><h3>1 Laptop</h3><div class="body"><p>Privater Mac oder Windows-Laptop mit Installationsrechten.</p></div></div>
       <div class="card head"><h3>2 Claude Pro</h3><div class="body"><p>Abo für USD 20 pro Monat, monatlich kündbar.</p></div></div>
       <div class="card head"><h3>3 Claude Code</h3><div class="body"><p>Mit einem Befehl im Terminal installieren und anmelden.</p></div></div>
       <div class="card head"><h3>4 Obsidian</h3><div class="body"><p>Den kostenlosen Editor installieren und einmal starten.</p></div></div>
+      <div class="card head"><h3>5 Claude Desktop</h3><div class="body"><p>Die App installieren und anmelden, Registerkarte «Code».</p></div></div>
     </div>
   </section>
 
@@ -244,7 +245,7 @@
 
   <section>
     <p class="kicker">Schritt 3</p>
-    <h2>Claude Code installieren</h2>
+    <h2>Claude Code im Terminal installieren</h2>
     <p>Claude Code läuft im <strong>Terminal</strong>, einem Fenster, in das Befehle als Text eingegeben werden. Die Installation ist ein einziger Befehl und braucht keine Administratorrechte.</p>
     <div class="grid g2">
       <div class="card">
@@ -299,12 +300,37 @@
   </section>
 
   <section>
+    <p class="kicker">Schritt 5</p>
+    <h2>Claude Desktop installieren</h2>
+    <p>Die <strong>Claude Desktop App</strong> enthält Claude Code in der Registerkarte <strong>Code</strong>. Node.js ist dafür nicht nötig. Die Installation im Terminal (Schritt 3) ist trotzdem nötig, weil das Seminar in beiden Umgebungen arbeitet.</p>
+    <ol class="steps">
+      <li>Die App für das eigene Betriebssystem herunterladen (Übersicht auf <a href="https://claude.ai/download">claude.ai/download</a>):
+        <ul>
+          <li><a href="https://claude.ai/api/desktop/darwin/universal/dmg/latest/redirect">macOS</a> (Intel und Apple Silicon)</li>
+          <li><a href="https://claude.ai/api/desktop/win32/x64/setup/latest/redirect">Windows x64</a> (die meisten Windows-Laptops)</li>
+          <li><a href="https://claude.ai/api/desktop/win32/arm64/setup/latest/redirect">Windows ARM64</a> (nur Geräte mit ARM-Prozessor, z.B. Surface mit Snapdragon)</li>
+        </ul></li>
+      <li>Mac: Die heruntergeladene Datei öffnen und <strong>Claude</strong> in den Ordner <strong>Programme</strong> ziehen. Windows: Den Installer ausführen.</li>
+      <li>Claude starten (Mac: Programme, Windows: Startmenü) und mit dem Konto aus Schritt 2 anmelden.</li>
+      <li>In der Seitenleiste die Registerkarte <strong>Code</strong> öffnen. Sind nur Symbole sichtbar, zeigt das Daraufzeigen den Namen.</li>
+      <li>Die App schliessen. Die erste Session folgt im Seminar.</li>
+    </ol>
+    <!-- Screenshot 02-claude-desktop-code-tab.jpg -->
+    <p class="small">Voraussetzung: macOS 13 oder neuer, Windows 10 oder neuer. Die App aktualisiert sich selbst.</p>
+    <div class="note">
+      <div class="k">Wenn die App ein Abo verlangt</div>
+      <p>Das Konto hat kein Pro-Abo. Auf claude.ai unter Einstellungen den Plan prüfen. Erscheint die Aufforderung, sich online anzumelden: Anmeldung im Browser abschliessen und die App neu starten.</p>
+    </div>
+  </section>
+
+  <section>
     <p class="kicker">Kurztest</p>
     <h2>Vor dem Seminar alles einmal prüfen</h2>
     <ul class="check">
       <li><code>claude --version</code> zeigt eine Versionsnummer.</li>
       <li><code>claude</code> startet ohne neue Anmeldung und antwortet auf eine Frage.</li>
       <li>Obsidian startet.</li>
+      <li>Claude Desktop startet, die Anmeldung steht, die Registerkarte <strong>Code</strong> ist sichtbar.</li>
       <li>Die Zugangsdaten zu Claude sind zur Hand.</li>
     </ul>
     <div class="note ok">
@@ -326,7 +352,7 @@
 
   <footer>
     <div class="mark" role="img" aria-label="HWZ"></div>
-    <div>Einrichten von Claude Code, Version 0.4.0, 14.11.2026</div>
+    <div>Einrichten von Claude Code, Version 0.5.0, 20.11.2026</div>
     <div>HWZ Hochschule für Wirtschaft Zürich, Lagerstrasse 5, 8004 Zürich</div>
   </footer>
 
