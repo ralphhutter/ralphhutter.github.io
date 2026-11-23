@@ -285,7 +285,7 @@ table.t td,table.t th{font-size:16px}
 <h1>Claude Code für Einsteiger</h1>
 <h2>Vom ersten Prompt zum eigenen Personal OS mit Skills, MCP und Subagents</h2>
 <hr class="rule">
-<div class="meta"><span>HWZ Hochschule für Wirtschaft Zürich</span><span>25./26.11.2026</span><span>Ralph Hutter</span><span>v0.1.0 · Stand 23.11.2026</span></div>
+<div class="meta"><span>HWZ Hochschule für Wirtschaft Zürich</span><span>25./26.11.2026</span><span>Ralph Hutter</span><span>v0.1.1 · Stand 23.11.2026</span></div>
 </section>
 
 <section class="slide content">
@@ -295,7 +295,7 @@ table.t td,table.t th{font-size:16px}
 
 <section class="slide content">
 <p class="kicker">Agenda</p><h2>Agenda Tag 1: Verstehen und Einrichten</h2>
-<table class="ag"><thead><tr><th>Zeit</th><th>Inhalt</th></tr></thead><tbody><tr><td>09:00</td><td>Begrüssung, Kursüberblick, Vorstellungsrunde</td></tr><tr><td>09:15</td><td><b>Was ist Claude Code?</b> Erste Schritte, Claude Code überall, Anwendungsfälle</td></tr><tr><td>10:00</td><td><b>Wie Claude Code funktioniert</b> Was Claude sieht, Sessions, Kontext, Berechtigungen</td></tr><tr class="pause"><td>11:00</td><td>Pause</td></tr><tr><td>11:15</td><td><b>File Operations</b> Dateien per Prompt, Ordnerstruktur, Bulk-Operationen</td></tr><tr class="pause"><td>12:00</td><td>Mittagspause</td></tr><tr><td>13:00</td><td><b>Obsidian</b> Vault einrichten, Oberfläche, Obsidian und Claude Code</td></tr><tr><td>13:45</td><td><b>Markdown</b> Syntax, warum Claude Markdown nutzt, Editoren</td></tr><tr class="pause"><td>14:30</td><td>Pause</td></tr><tr><td>14:45</td><td><b>Personal OS Konzept</b> Second Brain, PARA-System, lokaler Ordner als Basis</td></tr><tr><td>15:30</td><td><b>First Steps Claude Code CLI</b> Installation, Login, Projekt initialisieren</td></tr><tr class="neu"><td></td><td><b>Claude Desktop</b> Chat, Cowork und Code, PersonalOS in der App <span class="tag">neu, ohne eigenen Zeitblock</span></td></tr><tr><td>16:30</td><td>Fragen und Abschluss Tag 1</td></tr><tr class="pause"><td>16:45</td><td>Ende</td></tr></tbody></table>
+<table class="ag"><thead><tr><th>Zeit</th><th>Inhalt</th></tr></thead><tbody><tr><td>09:00</td><td>Begrüssung, Kursüberblick, Vorstellungsrunde</td></tr><tr><td>09:15</td><td><b>Was ist Claude Code?</b> Erste Schritte, Claude Code überall, Anwendungsfälle</td></tr><tr><td>10:00</td><td><b>Wie Claude Code funktioniert</b> Was Claude sieht, Sessions, Kontext, Berechtigungen</td></tr><tr class="pause"><td>11:00</td><td>Pause</td></tr><tr><td>11:15</td><td><b>File Operations</b> Dateien per Prompt, Ordnerstruktur, Bulk-Operationen</td></tr><tr class="pause"><td>12:00</td><td>Mittagspause</td></tr><tr><td>13:00</td><td><b>Obsidian</b> Vault einrichten, Oberfläche, Obsidian und Claude Code</td></tr><tr><td>13:45</td><td><b>Markdown</b> Syntax, warum Claude Markdown nutzt, Editoren</td></tr><tr class="pause"><td>14:30</td><td>Pause</td></tr><tr><td>14:45</td><td><b>Personal OS Konzept</b> Second Brain, PARA-System, lokaler Ordner als Basis</td></tr><tr><td>15:30</td><td><b>First Steps Claude Code CLI</b> Installation, Login, Projekt initialisieren</td></tr><tr class="neu"><td></td><td><b>Claude Desktop</b> Claude und Code, PersonalOS in der App <span class="tag">neu, ohne eigenen Zeitblock</span></td></tr><tr><td>16:30</td><td>Fragen und Abschluss Tag 1</td></tr><tr class="pause"><td>16:45</td><td>Ende</td></tr></tbody></table>
 </section>
 
 <section class="slide content">
@@ -801,75 +801,72 @@ claude</pre></div><div class="stack"><table class="t"><thead><tr><th>Konto</th><
 </section>
 
 <section class="slide break">
-<p class="kicker">Tag 1 · Modul 8</p><h1>Claude Desktop</h1><h2>Chat, Cowork und Code in einer App</h2><p class="meta"><span>Neues Modul, in der Agenda noch ohne Zeitblock</span></p>
+<p class="kicker">Tag 1 · Modul 8</p><h1>Claude Desktop</h1><h2>Claude und Code in einer App</h2><p class="meta"><span>Neues Modul, in der Agenda noch ohne Zeitblock</span></p>
 </section>
 
 <section class="slide content">
 <p class="kicker">Tag 1 · Modul 8</p><h2>Lernziele: Claude Desktop</h2>
-<div class="lz"><p class="lede">Nach diesem Modul:</p><ol><li>Die drei Bereiche der Desktop-App unterscheiden: Chat, Cowork, Code</li><li>Erklären, dass Code dieselbe Claude-Code-Umgebung ist wie die CLI, mit denselben Einstellungen und Skills</li><li>Eine Code-Sitzung im Ordner <code>PersonalOS</code> starten und in der Seitenleiste wiederfinden</li><li>Chat-Projekt, Cowork-Projekt und Projektordner auseinanderhalten</li><li>Kontextanzeige, Berechtigungsmodus und Änderungsansicht lesen</li></ol></div>
+<div class="lz"><p class="lede">Nach diesem Modul:</p><ol><li>Die zwei Bereiche der Desktop-App unterscheiden: Claude und Code</li><li>Erklären, dass der Bereich Code dieselbe Claude-Code-Umgebung ist wie die CLI, mit denselben Einstellungen und Skills</li><li>Eine Code-Sitzung im Ordner <code>PersonalOS</code> starten und in der Seitenleiste wiederfinden</li><li>Projekt in Claude und Projektordner in Code auseinanderhalten und je einen passenden Einsatz nennen</li><li>Kontextanzeige, Berechtigungsmodus und Änderungsansicht in der Code-Ansicht lesen</li></ol></div>
 </section>
 
 <section class="slide fig">
-<p class="kicker">Tag 1 · Modul 8</p><h2>Claude Desktop: drei Bereiche, ein lokaler Ordner</h2><p class="lede">Chat für Gespräche, Cowork für Aufgaben mit lokalen Dateien, Code für Claude Code mit grafischer Oberfläche. Der Ordner <code>PersonalOS</code> bleibt das Original.</p><div class="figw"><svg viewBox="0 0 1200 342" xmlns="http://www.w3.org/2000/svg" data-diagram="uebersicht" role="img" aria-labelledby="f4-uebersicht-hell-t f4-uebersicht-hell-d">
-<title id="f4-uebersicht-hell-t">Claude Desktop: drei Bereiche, ein lokaler Ordner</title>
-<desc id="f4-uebersicht-hell-d">Vier Gruppen. Chat: Gespräche und Chat-Projekte mit Wissen und Anweisungen, gespeichert im Konto. Cowork: Projekte, die lokale Ordner, Anweisungen und Chat-Projekte bündeln. Code: Sitzungen von Claude Code, jede in einem Projektordner, mit CLAUDE.md, Skills und Subagents. Lokaler Ordner PersonalOS mit PARA-Ordnern und CLAUDE.md, auf den Cowork und Code zugreifen.</desc>
+<p class="kicker">Tag 1 · Modul 8</p><h2>Claude Desktop: zwei Bereiche, ein lokaler Ordner</h2><p class="lede">Claude für Gespräche und Projekte, Code für Claude Code mit grafischer Oberfläche. Gewechselt wird oben links: Sprechblase für Claude, <code>&lt;/&gt;</code> für Code. Der Ordner <code>PersonalOS</code> bleibt das Original.</p><div class="figw"><svg viewBox="0 0 1200 342" xmlns="http://www.w3.org/2000/svg" data-diagram="uebersicht" role="img" aria-labelledby="f4-uebersicht-hell-t f4-uebersicht-hell-d">
+<title id="f4-uebersicht-hell-t">Claude Desktop: Claude und Code, ein lokaler Ordner</title>
+<desc id="f4-uebersicht-hell-d">Drei Gruppen. Claude, der Chat: Gespräche und Projekte mit Wissen, Anweisungen und auf Wunsch lokalen Ordnern. Code, also Claude Code: jede Sitzung läuft in einem Projektordner, die Seitenleiste gruppiert Sitzungen nach Ordner, Skills, Subagents und Settings wie in der CLI. Lokaler Ordner PersonalOS mit den PARA-Ordnern und der CLAUDE.md.</desc>
 <defs><marker id="f4-ar-hell" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto" markerUnits="userSpaceOnUse"><polygon points="0 0, 8 3, 0 6" fill="#6a7282"/></marker><marker id="f4-ar-s-hell" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto" markerUnits="userSpaceOnUse"><polygon points="0 0, 8 3, 0 6" fill="#002fa8"/></marker></defs>
 <rect width="1200" height="342" fill="#ffffff"/>
-<rect x="24" y="24" width="270" height="242" rx="0" fill="#ebf0ff" stroke="#d3ddf6" stroke-width="1.3"/>
-<text x="40" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Chat</text>
-<text x="278" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="end" font-family="'Graphik', Arial, Helvetica, sans-serif">im Konto</text>
-<rect x="36" y="64" width="246" height="56" rx="0" fill="#005EAA" stroke="none"/>
+<rect x="24" y="24" width="368" height="242" rx="0" fill="#ebf0ff" stroke="#d3ddf6" stroke-width="1.3"/>
+<text x="40" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Claude</text>
+<text x="376" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="end" font-family="'Graphik', Arial, Helvetica, sans-serif">Chat</text>
+<rect x="36" y="64" width="344" height="56" rx="0" fill="#005EAA" stroke="none"/>
 <text x="50" y="88" fill="#ffffff" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Gespräche</text>
-<text x="50" y="106" fill="#ffffff" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">ohne Dateizugriff</text>
-<rect x="36" y="130" width="246" height="56" rx="0" fill="#005EAA" stroke="none"/>
-<text x="50" y="154" fill="#ffffff" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Chat-Projekt</text>
+<text x="50" y="106" fill="#ffffff" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Fragen, Texte, Recherche</text>
+<rect x="36" y="130" width="344" height="56" rx="0" fill="#005EAA" stroke="none"/>
+<text x="50" y="154" fill="#ffffff" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Projekt</text>
 <text x="50" y="172" fill="#ffffff" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Wissen und Anweisungen</text>
-<rect x="318" y="24" width="270" height="242" rx="0" fill="#ebf0ff" stroke="#d3ddf6" stroke-width="1.3"/>
-<text x="334" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Cowork</text>
-<text x="572" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="end" font-family="'Graphik', Arial, Helvetica, sans-serif">auf dem Rechner</text>
-<rect x="330" y="64" width="246" height="56" rx="0" fill="#2B821D" stroke="none"/>
-<text x="344" y="88" fill="#ffffff" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Cowork-Projekt</text>
-<text x="344" y="106" fill="#ffffff" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">bündelt Ordner und Anweisungen</text>
-<rect x="330" y="130" width="246" height="56" rx="0" fill="#2B821D" stroke="none"/>
-<text x="344" y="154" fill="#ffffff" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Chat-Projekt einbinden</text>
-<text x="344" y="172" fill="#ffffff" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">ohne es zu verschieben</text>
-<rect x="612" y="24" width="270" height="242" rx="0" fill="#ebf0ff" stroke="#d3ddf6" stroke-width="1.3"/>
-<text x="628" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Code</text>
-<text x="866" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="end" font-family="'Graphik', Arial, Helvetica, sans-serif">Claude Code</text>
-<rect x="624" y="64" width="246" height="56" rx="0" fill="#0098D9" stroke="none"/>
-<text x="638" y="88" fill="#001447" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Sitzung</text>
-<text x="638" y="106" fill="#001447" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">läuft in einem Projektordner</text>
-<rect x="624" y="130" width="246" height="56" rx="0" fill="#0098D9" stroke="none"/>
-<text x="638" y="154" fill="#001447" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Seitenleiste</text>
-<text x="638" y="172" fill="#001447" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Sitzungen nach Ordner gruppiert</text>
-<rect x="624" y="196" width="246" height="56" rx="0" fill="#0098D9" stroke="none"/>
-<text x="638" y="220" fill="#001447" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Wie die CLI</text>
-<text x="638" y="238" fill="#001447" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Skills, Subagents, Settings</text>
-<rect x="906" y="24" width="270" height="242" rx="0" fill="#ebf0ff" stroke="#d3ddf6" stroke-width="1.3"/>
-<text x="922" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Lokaler Ordner</text>
+<rect x="36" y="196" width="344" height="56" rx="0" fill="#005EAA" stroke="none"/>
+<text x="50" y="220" fill="#ffffff" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Ordner im Projekt</text>
+<text x="50" y="238" fill="#ffffff" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">lokal, auf Wunsch freigegeben</text>
+<rect x="416" y="24" width="368" height="242" rx="0" fill="#ebf0ff" stroke="#d3ddf6" stroke-width="1.3"/>
+<text x="432" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Code</text>
+<text x="768" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="end" font-family="'Graphik', Arial, Helvetica, sans-serif">Claude Code</text>
+<rect x="428" y="64" width="344" height="56" rx="0" fill="#0098D9" stroke="none"/>
+<text x="442" y="88" fill="#001447" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Sitzung</text>
+<text x="442" y="106" fill="#001447" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">läuft in einem Projektordner</text>
+<rect x="428" y="130" width="344" height="56" rx="0" fill="#0098D9" stroke="none"/>
+<text x="442" y="154" fill="#001447" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Seitenleiste</text>
+<text x="442" y="172" fill="#001447" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Sitzungen nach Ordner gruppiert</text>
+<rect x="428" y="196" width="344" height="56" rx="0" fill="#0098D9" stroke="none"/>
+<text x="442" y="220" fill="#001447" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Wie die CLI</text>
+<text x="442" y="238" fill="#001447" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Skills, Subagents, Settings</text>
+<rect x="808" y="24" width="368" height="242" rx="0" fill="#ebf0ff" stroke="#d3ddf6" stroke-width="1.3"/>
+<text x="824" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Lokaler Ordner</text>
 <text x="1160" y="48" fill="#6a7282" font-size="7.76" font-weight="500" text-anchor="end" font-family="'Graphik', Arial, Helvetica, sans-serif">PersonalOS</text>
-<rect x="918" y="64" width="246" height="56" rx="0" fill="#E6B600" stroke="none"/>
-<text x="932" y="88" fill="#001447" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">PARA-Ordner</text>
-<text x="932" y="106" fill="#001447" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Projects, Areas, Resources, Archive</text>
-<rect x="918" y="130" width="246" height="56" rx="0" fill="#E6B600" stroke="none"/>
-<text x="932" y="154" fill="#001447" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">CLAUDE.md</text>
-<text x="932" y="172" fill="#001447" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Regeln für Claude Code</text>
+<rect x="820" y="64" width="344" height="56" rx="0" fill="#E6B600" stroke="none"/>
+<text x="834" y="88" fill="#001447" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">PARA-Ordner</text>
+<text x="834" y="106" fill="#001447" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Projects, Areas, Resources, Archive</text>
+<rect x="820" y="130" width="344" height="56" rx="0" fill="#E6B600" stroke="none"/>
+<text x="834" y="154" fill="#001447" font-size="11.64" font-weight="600" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">CLAUDE.md</text>
+<text x="834" y="172" fill="#001447" font-size="8.73" font-weight="400" text-anchor="start" font-family="'Graphik', Arial, Helvetica, sans-serif">Regeln für Claude Code</text>
 <path d="M 24 296 L 1176 296" stroke="#d3ddf6" stroke-width="1" fill="none"/>
 <text x="24" y="316.0" fill="#6a7282" font-size="7.76" font-weight="500" font-family="'Graphik', Arial, Helvetica, sans-serif">Legende</text>
 <rect x="114" y="306.0" width="24" height="14" fill="#005EAA"/>
-<text x="148" y="317.0" fill="#6a7282" font-size="10.67" font-family="'Graphik', Arial, Helvetica, sans-serif">Chat, im Konto</text>
-<rect x="266.6" y="306.0" width="24" height="14" fill="#2B821D"/>
-<text x="300.6" y="317.0" fill="#6a7282" font-size="10.67" font-family="'Graphik', Arial, Helvetica, sans-serif">Cowork, auf dem Rechner</text>
-<rect x="472.30000000000007" y="306.0" width="24" height="14" fill="#0098D9"/>
-<text x="506.30000000000007" y="317.0" fill="#6a7282" font-size="10.67" font-family="'Graphik', Arial, Helvetica, sans-serif">Code, Claude Code</text>
-<rect x="642.6000000000001" y="306.0" width="24" height="14" fill="#E6B600"/>
-<text x="676.6000000000001" y="317.0" fill="#6a7282" font-size="10.67" font-family="'Graphik', Arial, Helvetica, sans-serif">Lokaler Ordner PersonalOS</text>
+<text x="148" y="317.0" fill="#6a7282" font-size="10.67" font-family="'Graphik', Arial, Helvetica, sans-serif">Claude, Gespräche und Projekte</text>
+<rect x="361.0" y="306.0" width="24" height="14" fill="#0098D9"/>
+<text x="395.0" y="317.0" fill="#6a7282" font-size="10.67" font-family="'Graphik', Arial, Helvetica, sans-serif">Code, Claude Code</text>
+<rect x="531.3" y="306.0" width="24" height="14" fill="#E6B600"/>
+<text x="565.3" y="317.0" fill="#6a7282" font-size="10.67" font-family="'Graphik', Arial, Helvetica, sans-serif">Lokaler Ordner PersonalOS</text>
 </svg></div><p class="cap">Eigene Darstellung, HWZ-Stil, Farbweg HWZ-Shine.</p>
 </section>
 
 <section class="slide content">
-<p class="kicker">Tag 1 · Modul 8</p><h2>Chat, Cowork und Code im Vergleich</h2>
-<table class="t"><thead><tr><th>Bereich</th><th>Wofür</th><th>Lokale Dateien</th></tr></thead><tbody><tr><td>Chat</td><td>Gespräche, Texte, Recherche, Chat-Projekte</td><td>nein, nur hochgeladene Kopien</td></tr><tr><td>Cowork</td><td>Aufgaben mit Dateien und Ordnern, ohne Code-Werkzeuge</td><td>ja, freigegebene Ordner</td></tr><tr><td>Code</td><td>Claude Code: Dateien lesen, ändern, Befehle ausführen</td><td>ja, Projektordner der Sitzung</td></tr></tbody></table><div class="grid g2"><div class="note ok"><p class="k">Gleich</p><p>Konto, Abo, Kontingent. Code liest dieselben Einstellungen und Skills wie die CLI.</p></div><div class="note open"><p class="k">Getrennt</p><p>Verlauf und Kontext. Die Brücke zwischen den Bereichen ist eine Datei im Ordner, nicht der Verlauf.</p></div></div>
+<p class="kicker">Tag 1 · Modul 8</p><h2>Claude und Code im Vergleich</h2>
+<table class="t"><thead><tr><th>Bereich</th><th>Wofür</th><th>Lokale Dateien</th></tr></thead><tbody><tr><td>Claude</td><td>Gespräche, Texte, Recherche, Projekte</td><td>nur Dateien und Ordner, die einem Projekt oder Gespräch freigegeben sind</td></tr><tr><td>Code</td><td>Claude Code: Dateien lesen, ändern, Befehle ausführen</td><td>der Projektordner der Sitzung</td></tr></tbody></table><div class="grid g3"><div class="note ok"><p class="k">Gleich</p><p>Konto, Abo, Kontingent. Code liest dieselben Einstellungen und Skills wie die CLI.</p></div><div class="note open"><p class="k">Getrennt</p><p>Verlauf und Kontext. Die Brücke zwischen den Bereichen ist eine Datei im Ordner, nicht der Verlauf.</p></div><div class="note"><p class="k">Früher Cowork</p><p>Aufgaben mit lokalen Dateien liefen eine Zeit lang im Bereich Cowork. Er ist in Claude aufgegangen.</p></div></div>
+</section>
+
+<section class="slide content">
+<p class="kicker">Tag 1 · Modul 8</p><h2>Projekt in Claude, Projektordner in Code</h2>
+<table class="t"><thead><tr><th></th><th>Projekt in Claude</th><th>Projektordner in Code</th></tr></thead><tbody><tr><td>Was es ist</td><td>Sammlung von Gesprächen mit Wissen, Anweisungen und auf Wunsch lokalen Ordnern</td><td>der Ordner, in dem eine Code-Sitzung läuft</td></tr><tr><td>Wo es liegt</td><td>im Claude-Konto, lokale Ordner bleiben auf dem Rechner</td><td>auf dem eigenen Rechner</td></tr><tr><td>Anweisungen</td><td>Feld «Anweisungen» im Projekt</td><td><code>CLAUDE.md</code> im Ordner</td></tr><tr><td>Dateien</td><td>hochgeladene Kopien oder ein freigegebener Ordner</td><td>die Originale im Ordner</td></tr><tr><td>Angelegt über</td><td>Claude, <b>Projekte</b>, <b>+</b></td><td>Code, <b>Open folder…</b></td></tr></tbody></table><div class="note warn"><p class="k">Eine Quelle der Wahrheit</p><p>Der Ordner <code>PersonalOS</code> ist das Original. Regeln für Claude Code gehören in die <code>CLAUDE.md</code>, Anweisungen eines Claude-Projekts gelten nur für Gespräche in diesem Projekt.</p></div>
 </section>
 
 <section class="slide content">
@@ -879,7 +876,7 @@ claude</pre></div><div class="stack"><table class="t"><thead><tr><th>Konto</th><
 
 <section class="slide content">
 <p class="kicker">Tag 1 · Modul 8 · Übung</p><h2>Übung: PersonalOS in der Desktop-App</h2>
-<div class="ex"><dl><dt>Auftrag</dt><dd><ol><li>Claude Desktop öffnen, zum Bereich <b>Code</b> wechseln</li><li><b>Local</b>, <b>Open folder…</b>, Ordner <code>PersonalOS</code></li><li>Fragen, welche Regeln im Ordner gelten und woher sie stammen</li><li>Seitenleiste, Karte Kontext und Berechtigungsmodus prüfen</li><li><code>Resources/desktop-notizen.md</code> anlegen lassen und den Diff in <b>Changes</b> öffnen</li></ol></dd><dt>Dauer</dt><dd>15 Minuten</dd><dt>Ergebnis</dt><dd>Eine Code-Sitzung im Ordner <code>PersonalOS</code>, die die eigene <code>CLAUDE.md</code> kennt</dd></dl></div>
+<div class="ex"><dl><dt>Auftrag</dt><dd><ol><li>Claude Desktop öffnen, oben links mit <code>&lt;/&gt;</code> zum Bereich <b>Code</b> wechseln</li><li><b>Local</b>, <b>Open folder…</b>, Ordner <code>PersonalOS</code></li><li>Fragen, welche Regeln im Ordner gelten und woher sie stammen</li><li>Seitenleiste, Karte Kontext und Berechtigungsmodus prüfen</li><li><code>Resources/desktop-notizen.md</code> anlegen lassen und den Diff in <b>Changes</b> öffnen</li></ol></dd><dt>Dauer</dt><dd>15 Minuten</dd><dt>Ergebnis</dt><dd>Eine Code-Sitzung im Ordner <code>PersonalOS</code>, die die eigene <code>CLAUDE.md</code> kennt</dd></dl></div>
 </section>
 
 <section class="slide break">
@@ -1436,12 +1433,17 @@ und pushe sie auf GitHub.</pre></div><div class="stack"><div class="note"><p cla
 <div class="cols even"><div class="stack"><div class="grid g1"><div class="card"><h3>Kursunterlage im GitBook</h3><p><a href="https://ralphhutter.gitbook.io/claude-code-fur-einsteiger/">ralphhutter.gitbook.io/claude-code-fur-einsteiger</a></p><p class="small">Alle Module, Übungen, Skill Library, Anhang mit Bash Cheatsheet und allen Slash Commands</p></div><div class="card"><h3>Vorbereitungsseite</h3><p><a href="https://ralphhutter.github.io/claude-code/">ralphhutter.github.io/claude-code</a></p><p class="small">Installation, Kurztest, Hilfe bei Problemen</p></div></div></div><div class="stack"><div class="card"><h3>Breakout Topics zur Vertiefung</h3><ul class=""><li>Context Window</li><li>Agents und eingebaute Subagents</li><li>MCP Vertiefung</li><li>API</li><li>Skills, Agents, Plugins: der Vergleich</li><li>Loops und wiederkehrende Aufgaben</li><li>Terminal Commands</li><li>Claude Chrome Extension</li></ul></div></div></div>
 </section>
 
+<section class="slide content">
+<p class="kicker">Dokument</p><h2>Änderungshistorie</h2>
+<table class="t"><thead><tr><th>Version</th><th>Datum</th><th>Änderung</th></tr></thead><tbody><tr><td>0.1.1</td><td>23.11.2026</td><td>Modul Claude Desktop: zwei Bereiche Claude und Code, Cowork nur noch historisch, neue Folie Projekt in Claude und Projektordner in Code, Diagramm neu gezeichnet</td></tr><tr><td>0.1.0</td><td>23.11.2026</td><td>Erste Fassung des Studierenden-Decks</td></tr></tbody></table>
+</section>
+
 <section class="slide end">
 <div class="logo" role="img" aria-label="HWZ Hochschule für Wirtschaft Zürich"></div>
 </section>
 </div>
 <div class="mark" role="img" aria-label="HWZ"></div>
-<div class="foot"><b>Claude Code für Einsteiger</b> · Seminar HWZ · v0.1.0</div>
+<div class="foot"><b>Claude Code für Einsteiger</b> · Seminar HWZ · v0.1.1</div>
 <div class="hud">
   <button id="prev" aria-label="Vorherige Folie">&#8592;</button>
   <span class="n"><span id="cur">1</span>&thinsp;/&thinsp;<span id="tot">1</span></span>
